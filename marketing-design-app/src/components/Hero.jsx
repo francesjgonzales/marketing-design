@@ -5,7 +5,7 @@ export default function Hero() {
         <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
           <div>
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
-              Marketing Designer
+              Frances Gonzales
             </p>
 
             <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
