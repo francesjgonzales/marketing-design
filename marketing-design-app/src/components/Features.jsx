@@ -1,7 +1,6 @@
 const strengths = [
   "Web Design: WordPress, responsive layouts, content structuring",
-  "Graphic Design: Digital assets, web visuals",
-  "marketing and campaign materials",
+  "Graphic Design: Digital assets, web visuals, marketing and campaign materials",
   "eCommerce Content: Product content, visual consistency, front-end readiness",
   "Tools: Adobe Creative Suite, Figma, Canva",
   "Front-End Awareness: HTML, CSS, JavaScript, Bootstrap",
