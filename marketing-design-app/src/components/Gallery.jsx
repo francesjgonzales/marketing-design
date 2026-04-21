@@ -11,17 +11,23 @@ import gtInfographics from "../assets/gt-infographics.png";
 import nzGd from "../assets/NZ-gd.jpg";
 import mailchimp from "../assets/edm-gt-mailchimp.png";
 import eventLogo from "../assets/event-logos.png";
+import socmedCAG from "../assets/thisthat-CAG.png";
+import webAssets from "../assets/web-assets-CAG.png";
+import thisthat from "../assets/this-that.mp4";
+import nursingUNA from "../assets/yearsofnursingUNA.png";
+import newSole from "../assets/newsolePersonal.png";
+import christTheWay from "../assets/ctw.png";
 
 const collierImages = [
   {
     id: 1,
     src: flightsFA,
-    alt: "May 12 Flights Print Ad",
+    alt: "May 12 Flights Print Ad as advertised in Straits Times Singapore",
   },
   {
     id: 2,
     src: arkFlyer,
-    alt: "Ark @ Gambas A5 Flyer",
+    alt: "Ark @ Gambas A5 Flyer distributed to residents in the vicinity of Ark @ Gambas and Gambas Crescent, Singapore",
   },
   {
     id: 3,
@@ -31,45 +37,85 @@ const collierImages = [
   {
     id: 4,
     src: bdcPoster,
-    alt: "Business Development Center Launch Poster",
+    alt: "Business Development Center Launch Poster posted internally in the office",
   },
   {
     id: 5,
     src: colliersPresentation,
-    alt: "Colliers Presentation Slides",
+    alt: "Colliers Presentation Slide Deck for Sales Enablement and Client Pitches",
+  },
+];
+
+const cagImages = [
+  {
+    id: 1,
+    src: socmedCAG,
+    alt: "Promotional Social Media Post called This or That for Wines and Spirits",
+  },
+  {
+    id: 2,
+    type: "video",
+    src: thisthat,
+    alt: "Promotional Social Media Animation Story called This or That for Wines and Spirits",
+  },
+  {
+    id: 3,
+    src: webAssets,
+    alt: "Web banners and assets for High-Tech Fair campaign",
   },
 ];
 
 const travelImages = [
   {
-    id: 6,
+    id: 1,
     src: gtBrochure,
-    alt: "Global Travel Corporate Brochure",
+    alt: "Global Travel Corporate Brochure distributed to clients and prospects",
   },
   {
-    id: 7,
+    id: 2,
     src: gtInfographics,
     alt: "Global Travel Infographics for Sales Enablement",
   },
   {
-    id: 8,
+    id: 3,
     src: printAd,
-    alt: "Rocky Mountaineer Print Ad",
+    alt: "Rocky Mountaineer Print Advertisement posted in Straits Times Singapore",
   },
   {
-    id: 9,
+    id: 4,
     src: nzGd,
-    alt: "New Zealand Getaway Google Ads",
+    alt: "New Zealand Getaway Google Display Banner for Scenic Travel's Hurtigruten Campaign",
   },
   {
-    id: 10,
+    id: 5,
     src: mailchimp,
     alt: "eDM for Global Travel sent via Mailchimp",
   },
   {
-    id: 11,
+    id: 6,
     src: eventLogo,
     alt: "Event Logos for Global Travel's 2024 Events Initiatives",
+  },
+];
+
+const websitePortfolio = [
+  {
+    id: 1,
+    src: nursingUNA,
+    url: "https://newsole2.onrender.com/",
+    alt: "Informative website about the history of nursing in Alberta",
+  },
+  {
+    id: 2,
+    src: newSole,
+    url: "https://newsole2.onrender.com/",
+    alt: "A personal website centered on building an eCommerce store for a shoe brand called New Sole",
+  },
+  {
+    id: 3,
+    src: christTheWay,
+    url: "https://stagesite.sbs/",
+    alt: "A freelance project for a church website called Christ The Way, built to enhance the user experience by engaging visitors to explore the church's facility rentals, offerings and events",
   },
 ];
 
@@ -95,11 +141,17 @@ export default function Gallery() {
             className="cursor-pointer overflow-hidden rounded-xl shadow hover:scale-105 transition"
             onClick={() => setSelectedImage(image)}
           >
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="h-64 w-full object-cover"
-            />
+            {image.type === "video" ? (
+              <video className="h-64 w-full object-cover" muted playsInline>
+                <source src={image.src} type="video/mp4" />
+              </video>
+            ) : (
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="h-64 w-full object-cover"
+              />
+            )}
           </div>
         ))}
       </div>
@@ -110,13 +162,15 @@ export default function Gallery() {
     <div className="min-h-screen bg-gray-100 px-6 py-12">
       <div className="mx-auto max-w-6xl">
         <h1 className="mb-8 text-left text-4xl font-bold">Gallery</h1>
-        {renderSection("Colliers", collierImages)}
+        {renderSection("Website Portfolio", websitePortfolio)}
+        {renderSection("Changi Airport Group", cagImages)}
         {renderSection("Global Travel", travelImages)}
+        {renderSection("Colliers International", collierImages)}
       </div>
 
       {selectedImage && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black px-4"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 px-4"
           onClick={closeModal}
         >
           <div
@@ -130,11 +184,28 @@ export default function Gallery() {
               ×
             </button>
 
-            <img
-              src={selectedImage.src}
-              alt={selectedImage.alt}
-              className="max-h-[80vh] w-full rounded-lg object-contain"
-            />
+            {selectedImage.type === "video" ? (
+              <video
+                controls
+                autoPlay
+                className="max-h-[80vh] w-full rounded-lg object-contain"
+              >
+                <source src={selectedImage.src} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            ) : (
+              <a
+                href={selectedImage.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={selectedImage.src}
+                  alt={selectedImage.alt}
+                  className="max-h-[80vh] w-full rounded-lg object-contain"
+                />
+              </a>
+            )}
 
             <p className="mt-3 text-center text-white">{selectedImage.alt}</p>
           </div>
