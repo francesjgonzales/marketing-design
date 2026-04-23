@@ -1,61 +1,121 @@
+import { motion } from "framer-motion";
+
 export default function Timeline() {
-  const education = [
-    { year: "2004", title: "Bachelor of Arts, Mass Communications" },
+  const timelineData = [
+    {
+      year: "2004",
+      education: "Graduated Bachelor of Arts, Mass Communications",
+      work: "",
+    },
     {
       year: "2005",
-      title: "Certificate in Basic Visual Communications, Fine Arts",
+      education: "Certificate in Basic Visual Communications, Fine Arts",
+      work: "",
     },
-    { year: "2018", title: "Certificate in Digital User Experience Design" },
-    { year: "2021", title: "Diploma, Web Application Development" },
-  ];
-
-  const work = [
-    { year: "2007 - 2021", title: "Graphic Designer" },
-    { year: "2021 - 2022", title: "Visual Designer" },
-    { year: "2022 - 2023", title: "Web Developer" },
-    { year: "2023 - 2025", title: "Graphic Designer" },
-    { year: "2026", title: "eCommerce Specialist" },
+    {
+      year: "2007 - 2021",
+      education: "",
+      work: "Graphic Designer",
+    },
+    {
+      year: "2018",
+      education: "Certificate in Digital User Experience Design",
+      work: "",
+    },
+    {
+      year: "2021",
+      education: "Diploma, Web Application Development",
+      work: "Began my UX journey in 2021 as a Visual Designer, where I was introduced to user-centered design and started applying UX thinking to my work.",
+    },
+    {
+      year: "2022 - 2023",
+      education: "",
+      work: "Web Developer",
+    },
+    {
+      year: "2023 - 2025",
+      education: "",
+      work: "Graphic Designer",
+    },
+    {
+      year: "2026",
+      education: "",
+      work: "eCommerce Specialist",
+    },
   ];
 
   return (
-    <div className="bg-gray-100 py-16 px-6">
-      <h2 className="text-3xl font-bold text-center mb-12">Timeline</h2>
+    <section className="bg-gray-50 px-6 py-16">
+      <div className="mx-auto max-w-6xl">
+        <h2 className="mb-4 text-center text-3xl font-bold md:text-4xl">
+          Career & Education Timeline
+        </h2>
+        <p className="mx-auto mb-12 max-w-2xl text-center text-gray-600">
+          A snapshot of how my background in design, education, and development
+          shaped my transition into user-centered digital work.
+        </p>
 
-      <div className="relative max-w-6xl mx-auto">
-        {/* Center Line */}
-        <div className="absolute left-1/2 top-0 h-full w-1 bg-gray-300 transform -translate-x-1/2"></div>
+        <div className="relative">
+          {/* center line */}
+          <div className="absolute left-1/2 top-0 hidden h-full w-1 -translate-x-1/2 rounded bg-gray-300 md:block" />
 
-        <div className="space-y-12">
-          {work.map((item, index) => (
-            <div key={index} className="relative flex items-center">
-              {/* LEFT - WORK */}
-              <div className="w-1/2 pr-8 text-right">
-                <div className="inline-block bg-white p-4 rounded-xl shadow">
-                  <p className="text-sm text-gray-500">{item.year}</p>
-                  <p className="font-semibold">{item.title}</p>
+          <div className="space-y-10">
+            {timelineData.map((item, index) => (
+              <div
+                key={index}
+                className="relative grid grid-cols-1 gap-6 md:grid-cols-[1fr_auto_1fr] md:items-center"
+              >
+                {/* Work side */}
+                <div className="md:pr-10">
+                  {item.work && (
+                    <motion.div
+                      initial={{ opacity: 0, x: -40 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true, amount: 0.3 }}
+                      transition={{ duration: 0.5 }}
+                      className="rounded-2xl bg-white p-5 shadow-md"
+                    >
+                      <p className="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-500">
+                        Work Experience
+                      </p>
+                      <p className="text-sm text-gray-400">{item.year}</p>
+                      <h3 className="mt-1 text-lg font-semibold text-gray-900">
+                        {item.work}
+                      </h3>
+                    </motion.div>
+                  )}
+                </div>
+
+                {/* center dot */}
+                <div className="relative hidden md:flex md:justify-center">
+                  <div className="z-10 h-5 w-5 rounded-full border-4 border-white bg-black shadow" />
+                </div>
+
+                {/* Education side */}
+                <div className="md:pl-10">
+                  {item.education && (
+                    <motion.div
+                      initial={{ opacity: 0, x: 40 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true, amount: 0.3 }}
+                      transition={{ duration: 0.5 }}
+                      className="rounded-2xl bg-white p-5 shadow-md"
+                    >
+                      <p className="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-500">
+                        Education
+                      </p>
+                      <p className="text-sm text-gray-400">{item.year}</p>
+                      <h3 className="mt-1 text-lg font-semibold text-gray-900">
+                        {item.education}
+                      </h3>
+                    </motion.div>
+                  )}
                 </div>
               </div>
-
-              {/* DOT */}
-              <div className="w-0">
-                <div className="w-4 h-4 bg-black rounded-full border-4 border-white shadow absolute left-1/2 transform -translate-x-1/2"></div>
-              </div>
-
-              {/* RIGHT - EDUCATION */}
-              <div className="w-1/2 pl-8">
-                {education[index] && (
-                  <div className="inline-block bg-white p-4 rounded-xl shadow">
-                    <p className="text-sm text-gray-500">
-                      {education[index].year}
-                    </p>
-                    <p className="font-semibold">{education[index].title}</p>
-                  </div>
-                )}
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
