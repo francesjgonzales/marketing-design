@@ -1,8 +1,8 @@
 const strengths = [
-  "Web Design: WordPress, responsive layouts, content structuring",
-  "Graphic Design: Digital assets, web visuals, marketing and campaign materials",
-  "eCommerce Content: Product content, visual consistency, front-end readiness",
-  "Tools: Adobe Creative Suite, Figma, Canva",
+  "UX/UI Design: User research, user flows & journey mapping, wireframes and prototype,accessibility & usability best practices",
+  "Web Design: WordPress, responsive layouts, content structuring, usability-focused",
+  "Digital & Marketing Design: Social Media visuals, web banners, email templates, campaign materials",
+  "Tools: Adobe Creative Suite (Photoshop, Illustrator, After Effects, In Design), Figma, Canva, Jira (Automation, Dashboard), Confluence (Documentation), Github",
   "Front-End Awareness: HTML, CSS, JavaScript, Bootstrap",
   "Other: Asset organization, file preparation, accessibility basics",
 ];
@@ -20,6 +20,11 @@ export default function Features() {
               <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950">
                 I focus on clarity, structure, and business-aware design.
               </h2>
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+                With experience in UX research, user flows, and front-end
+                fundamentals, I design with both usability and real-world
+                implementation in mind.
+              </p>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">

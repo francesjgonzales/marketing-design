@@ -1,6 +1,7 @@
 import Features from "../components/Features";
 import Hero from "../components/Hero";
 import Gallery from "../components/Gallery";
+import Timeline from "../components/Timeline";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Features />
       <Gallery />
+      <Timeline />
     </div>
   );
 }
