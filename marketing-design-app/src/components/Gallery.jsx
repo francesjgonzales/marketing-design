@@ -17,6 +17,8 @@ import thisthat from "../assets/this-that.mp4";
 import nursingUNA from "../assets/yearsofnursingUNA.png";
 import newSole from "../assets/newsolePersonal.png";
 import christTheWay from "../assets/ctw.png";
+import energyStar from "../assets/energyRebate-theBrick.png";
+import wineSpirit from "../assets/wineSpiritCAG.png";
 
 const collierImages = [
   {
@@ -119,6 +121,21 @@ const websitePortfolio = [
   },
 ];
 
+const uxui = [
+  {
+    id: 1,
+    src: energyStar,
+    url: "https://www.notion.so/ENERGY-STAR-Rebate-Landing-Page-UX-Case-Study-3387e80886ca80f2a3dfd4fbba163c16",
+    alt: "Informative website about the history of nursing in Alberta",
+  },
+  {
+    id: 2,
+    src: wineSpirit,
+    url: "https://deserted-existence-32a.notion.site/iShopChangi-UX-Research-on-Wines-Spirits-34b7e80886ca80d48da0ed43061fdc34",
+    alt: "iShopChangi UX Research on Wines & Spirits",
+  },
+];
+
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -162,6 +179,7 @@ export default function Gallery() {
     <div className="min-h-screen bg-gray-100 px-6 py-12">
       <div className="mx-auto max-w-6xl">
         <h1 className="mb-8 text-left text-4xl font-bold">Gallery</h1>
+        {renderSection("UX UI Design", uxui)}
         {renderSection("Website Portfolio", websitePortfolio)}
         {renderSection("Changi Airport Group", cagImages)}
         {renderSection("Global Travel", travelImages)}
