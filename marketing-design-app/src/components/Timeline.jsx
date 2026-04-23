@@ -15,7 +15,7 @@ export default function Timeline() {
     {
       year: "2007 - 2021",
       education: "",
-      work: "Graphic Designer",
+      work: "Became a Graphic Designer across various industries, where I honed my skills in brand-compliant design and developed a strong foundation in marketing design across print and digital platforms.",
     },
     {
       year: "2018",
@@ -30,17 +30,17 @@ export default function Timeline() {
     {
       year: "2022 - 2023",
       education: "",
-      work: "Web Developer",
+      work: "Worked as a Web Developer managing WordPress site. This experience deepened my understanding of front-end development and the importance of designing with implementation in mind.",
     },
     {
       year: "2023 - 2025",
       education: "",
-      work: "Graphic Designer",
+      work: "Moved to Canada and worked as a Graphic Designer for a union organization, where I continued to apply UX principles to my design work and collaborated closely with cross-functional teams.",
     },
     {
       year: "2026",
       education: "",
-      work: "eCommerce Specialist",
+      work: "A short stint as an eCommerce Specialist where I focused on content structuring and front-end readiness, further solidifying my understanding of how design decisions impact user experience and business goals.",
     },
   ];
 
