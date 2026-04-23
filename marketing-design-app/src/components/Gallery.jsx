@@ -178,9 +178,9 @@ export default function Gallery() {
   return (
     <div className="min-h-screen bg-gray-100 px-6 py-12">
       <div className="mx-auto max-w-6xl">
-        <h1 className="mb-8 text-left text-4xl font-bold">Gallery</h1>
+        <h1 className="mb-8 text-left text-4xl font-bold">Works</h1>
         {renderSection("UX UI Design", uxui)}
-        {renderSection("Website Portfolio", websitePortfolio)}
+        {renderSection("Website Design", websitePortfolio)}
         {renderSection("Changi Airport Group", cagImages)}
         {renderSection("Global Travel", travelImages)}
         {renderSection("Colliers International", collierImages)}
