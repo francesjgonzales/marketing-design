@@ -29,19 +29,19 @@ const unaWorks = [
     id: 1,
     type: "video",
     src: nursesWarriors,
-    alt: "Social media video for the Respect, Retain, Recruit campaign, concepted, storyboarded, and produced to highlight the importance of supporting nurses in Alberta",
+    alt: "SSocial media video for the Respect, Retain, Recruit campaign, worked on the visual concept and storyboard based on a soundbite to highlight the importance of supporting nurses in Alberta.",
   },
   {
     id: 2,
     type: "video",
     src: respectRetainRecruit,
-    alt: "Social media video for the Respect, Retain, Recruit campaign, concepted, storyboarded, and produced to highlight the importance of supporting nurses in Alberta",
+    alt: "Social media video for the Respect, Retain, Recruit campaign, worked on the visual concept and storyboard based on a soundbite to highlight the importance of supporting nurses in Alberta.",
   },
   {
     id: 3,
     type: "video",
     src: nursesHeartbeat,
-    alt: "Social media video for the Respect, Retain, Recruit campaign, concepted, storyboarded, and produced to highlight the importance of supporting nurses in Alberta",
+    alt: "Social media video for the Respect, Retain, Recruit campaign, worked on the visual concept and storyboard based on a soundbite to highlight the importance of supporting nurses in Alberta.",
   },
   {
     id: 4,
