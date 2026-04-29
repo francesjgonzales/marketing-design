@@ -19,6 +19,37 @@ import newSole from "../assets/newsolePersonal.png";
 import christTheWay from "../assets/ctw.png";
 import energyStar from "../assets/energyRebate-theBrick.png";
 import wineSpirit from "../assets/wineSpiritCAG.png";
+import nursesWarriors from "../assets/Nurses-Frontline-Warriors.mov";
+import respectRetainRecruit from "../assets/RespectRetainRecruit.mov";
+import nursesHeartbeat from "../assets/Nurses-Heartbeat.mov";
+import unaGuidelines from "../assets/una-guidelines.png";
+
+const unaWorks = [
+  {
+    id: 1,
+    type: "video",
+    src: nursesWarriors,
+    alt: "Social media video for the Respect, Retain, Recruit campaign, concepted, storyboarded, and produced to highlight the importance of supporting nurses in Alberta",
+  },
+  {
+    id: 2,
+    type: "video",
+    src: respectRetainRecruit,
+    alt: "Social media video for the Respect, Retain, Recruit campaign, concepted, storyboarded, and produced to highlight the importance of supporting nurses in Alberta",
+  },
+  {
+    id: 3,
+    type: "video",
+    src: nursesHeartbeat,
+    alt: "Social media video for the Respect, Retain, Recruit campaign, concepted, storyboarded, and produced to highlight the importance of supporting nurses in Alberta",
+  },
+  {
+    id: 4,
+    src: unaGuidelines,
+    url: "https://www.una.ca/document/unalogo",
+    alt: "Informative infographic outlining the guidelines for the United Nurses of Alberta's Respect, Retain, Recruit campaign to encourage support for nurses in Alberta",
+  },
+];
 
 const collierImages = [
   {
@@ -181,6 +212,7 @@ export default function Gallery() {
         <h1 className="mb-8 text-left text-4xl font-bold">Works</h1>
         {renderSection("UX UI Design", uxui)}
         {renderSection("Website Design", websitePortfolio)}
+        {renderSection("United Nurses of Alberta", unaWorks)}
         {renderSection("Changi Airport Group", cagImages)}
         {renderSection("Global Travel", travelImages)}
         {renderSection("Colliers International", collierImages)}
