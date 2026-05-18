@@ -23,6 +23,7 @@ import nursesWarriors from "../assets/Nurses-Frontline-Warriors.mov";
 import respectRetainRecruit from "../assets/RespectRetainRecruit.mov";
 import nursesHeartbeat from "../assets/Nurses-Heartbeat.mov";
 import unaGuidelines from "../assets/una-guidelines.png";
+import emailtempalte from "../assets/email-template.png";
 
 const unaWorks = [
   {
@@ -135,7 +136,7 @@ const websitePortfolio = [
   {
     id: 1,
     src: nursingUNA,
-    url: "https://newsole2.onrender.com/",
+    url: "https://github.com/francesjgonzales/100yearsofnursing",
     alt: "Informative website about the history of nursing in Alberta",
   },
   {
@@ -147,7 +148,7 @@ const websitePortfolio = [
   {
     id: 3,
     src: christTheWay,
-    url: "https://stagesite.sbs/",
+    url: "https://christthewayadventist.ca/",
     alt: "A freelance project for a church website called Christ The Way, built to enhance the user experience by engaging visitors to explore the church's facility rentals, offerings and events",
   },
 ];
@@ -164,6 +165,12 @@ const uxui = [
     src: wineSpirit,
     url: "https://deserted-existence-32a.notion.site/iShopChangi-UX-Research-on-Wines-Spirits-34b7e80886ca80d48da0ed43061fdc34",
     alt: "iShopChangi UX Research on Wines & Spirits",
+  },
+  {
+    id: 3,
+    src: emailtempalte,
+    url: "https://www.figma.com/proto/MsD2qFxhmXgXZg284MwrwJ/The-Brick---Email-Template?node-id=2-590&viewport=752%2C-130%2C0.02&t=GwvjWzoYMZDnwSjj-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2%3A590&page-id=0%3A1",
+    alt: "Email Template for The Brick's eDM Campaigns",
   },
 ];
 

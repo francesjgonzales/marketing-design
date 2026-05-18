@@ -9,13 +9,15 @@ export default function Hero() {
             </p>
 
             <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
-              UX/UI Designer specializing in web and digital marketing design.
+              Creative Designer specializing in web and digital marketing design
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-              I design user-focused digital experiences across web and marketing
-              platforms, combining UX thinking, visual design, and structured
-              content to create clear, effective, and brand-aligned solutions.
+              I’m a multidisciplinary designer with experience in graphic
+              design, visual storytelling, digital campaigns, WordPress
+              websites, motion graphics, and UX-informed web design. I create
+              clear, brand-aligned visuals for print, social media, websites,
+              presentations, and marketing communications.igned solutions.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
@@ -33,7 +35,7 @@ export default function Hero() {
                 What I bring
               </p>
               <p className="mt-2 text-2xl font-semibold text-slate-950">
-                5+ years in marketing design
+                5+ years in digital design and web development
               </p>
             </div>
 
