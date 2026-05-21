@@ -30,11 +30,13 @@ const unaWorks = [
     id: 1,
     type: "video",
     src: nursesWarriors,
-    alt: "SSocial media video for the Respect, Retain, Recruit campaign, worked on the visual concept and storyboard based on a soundbite to highlight the importance of supporting nurses in Alberta.",
+    title: "Nurses Frontline Warriors - Animated Reel",
+    alt: "Social media video for the Respect, Retain, Recruit campaign, worked on the visual concept and storyboard based on a soundbite to highlight the importance of supporting nurses in Alberta.",
   },
   {
     id: 2,
     type: "video",
+    title: "Respect, Retain, Recruit - Animated Reel",
     src: respectRetainRecruit,
     alt: "Social media video for the Respect, Retain, Recruit campaign, worked on the visual concept and storyboard based on a soundbite to highlight the importance of supporting nurses in Alberta.",
   },
@@ -42,12 +44,14 @@ const unaWorks = [
     id: 3,
     type: "video",
     src: nursesHeartbeat,
+    title: "Nurses Heartbeat - Animated Reel",
     alt: "Social media video for the Respect, Retain, Recruit campaign, worked on the visual concept and storyboard based on a soundbite to highlight the importance of supporting nurses in Alberta.",
   },
   {
     id: 4,
     src: unaGuidelines,
     url: "https://www.una.ca/document/unalogo",
+    title: "Logo Guidelines for United Nurses of Alberta",
     alt: "Informative infographic outlining the guidelines for the United Nurses of Alberta's Respect, Retain, Recruit campaign to encourage support for nurses in Alberta",
   },
 ];
@@ -56,26 +60,31 @@ const collierImages = [
   {
     id: 1,
     src: flightsFA,
+    title: "May 12 Flights Black and White Print Advertisement",
     alt: "May 12 Flights Print Ad as advertised in Straits Times Singapore",
   },
   {
     id: 2,
     src: arkFlyer,
+    title: "Industrial Real Estate A5 Flyer",
     alt: "Ark @ Gambas A5 Flyer distributed to residents in the vicinity of Ark @ Gambas and Gambas Crescent, Singapore",
   },
   {
     id: 3,
     src: arkAdPage,
+    title: "Industrial Real Estate Full Colour Advertisement Page",
     alt: "Ark @ Gambas A5 Advertisement Page",
   },
   {
     id: 4,
     src: bdcPoster,
+    title: "Business Development Center Launch Poster",
     alt: "Business Development Center Launch Poster posted internally in the office",
   },
   {
     id: 5,
     src: colliersPresentation,
+    title: "Colliers Presentation Slide Deck",
     alt: "Colliers Presentation Slide Deck for Sales Enablement and Client Pitches",
   },
 ];
@@ -84,17 +93,20 @@ const cagImages = [
   {
     id: 1,
     src: socmedCAG,
+    title: "This or That campaign - Animated Reel",
     alt: "Promotional Social Media Post called This or That for Wines and Spirits",
   },
   {
     id: 2,
     type: "video",
     src: thisthat,
+    title: "This or That campaign - Animated Reel",
     alt: "Promotional Social Media Animation Story called This or That for Wines and Spirits",
   },
   {
     id: 3,
     src: webAssets,
+    title: "High-Tech Fair Web Banners and Social Media Assets",
     alt: "Web banners and assets for High-Tech Fair campaign",
   },
 ];
@@ -103,31 +115,37 @@ const travelImages = [
   {
     id: 1,
     src: gtBrochure,
+    title: "Global Travel Corporate Brochure",
     alt: "Global Travel Corporate Brochure distributed to clients and prospects",
   },
   {
     id: 2,
     src: gtInfographics,
+    title: "Global Travel Infographics for Sales Enablement",
     alt: "Global Travel Infographics for Sales Enablement",
   },
   {
     id: 3,
     src: printAd,
+    title: "Rocky Mountaineer Full ColourPrint Advertisement",
     alt: "Rocky Mountaineer Print Advertisement posted in Straits Times Singapore",
   },
   {
     id: 4,
     src: nzGd,
+    title: "New Zealand Getaway Google Display Banner",
     alt: "New Zealand Getaway Google Display Banner for Scenic Travel's Hurtigruten Campaign",
   },
   {
     id: 5,
     src: mailchimp,
+    title: "Global Travel Email Marketing Campaign",
     alt: "eDM for Global Travel sent via Mailchimp",
   },
   {
     id: 6,
     src: eventLogo,
+    title: "Global Travel Event Logos",
     alt: "Event Logos for Global Travel's 2024 Events Initiatives",
   },
 ];
@@ -138,18 +156,21 @@ const websitePortfolio = [
     src: nursingUNA,
     url: "https://github.com/francesjgonzales/100yearsofnursing",
     alt: "Informative website about the history of nursing in Alberta",
+    title: "100 Years of Nursing in Alberta - Informative Website",
   },
   {
     id: 2,
     src: newSole,
     url: "https://newsole2.onrender.com/",
     alt: "A personal website centered on building an eCommerce store for a shoe brand called New Sole",
+    title: "New Sole - Personal eCommerce Website",
   },
   {
     id: 3,
     src: christTheWay,
     url: "https://christthewayadventist.ca/",
     alt: "A freelance project for a church website called Christ The Way, built to enhance the user experience by engaging visitors to explore the church's facility rentals, offerings and events",
+    title: "Christ The Way - Church Website",
   },
 ];
 
@@ -157,20 +178,25 @@ const uxui = [
   {
     id: 1,
     src: energyStar,
-    url: "https://www.notion.so/ENERGY-STAR-Rebate-Landing-Page-UX-Case-Study-3387e80886ca80f2a3dfd4fbba163c16",
+    url: "https://www.notion.so/ENERGY-STAR-Rebate-Landing-Page-3677e80886ca801d8991ff28b5d38f91?pvs=28",
     alt: "Informative website about the history of nursing in Alberta",
+    title:
+      "UX Content Strategy and Wireframes for ENERGY STAR Rebate Landing Page",
   },
   {
     id: 2,
     src: wineSpirit,
-    url: "https://deserted-existence-32a.notion.site/iShopChangi-UX-Research-on-Wines-Spirits-34b7e80886ca80d48da0ed43061fdc34",
+    url: "https://www.notion.so/Wines-and-Spirit-Visual-Merchandise-enhancement-3677e80886ca807cb2fcf5256c000212?source=copy_link",
     alt: "iShopChangi UX Research on Wines & Spirits",
+    title:
+      "UX Research and Visual Merchandising Enhancement for iShopChangi's Wines & Spirits Category",
   },
   {
     id: 3,
     src: emailtempalte,
     url: "https://www.figma.com/proto/MsD2qFxhmXgXZg284MwrwJ/The-Brick---Email-Template?node-id=2-590&viewport=752%2C-130%2C0.02&t=GwvjWzoYMZDnwSjj-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2%3A590&page-id=0%3A1",
     alt: "Email Template for The Brick's eDM Campaigns",
+    title: "Email Template Design for The Brick's eDM Campaigns",
   },
 ];
 
@@ -188,12 +214,11 @@ export default function Gallery() {
   const renderSection = (title, images) => (
     <div className="mb-16" id="gallery">
       <h2 className="mb-6 text-2xl font-bold">{title}</h2>
-
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
         {images.map((image) => (
           <div
             key={image.id}
-            className="cursor-pointer overflow-hidden rounded-xl shadow hover:scale-105 transition"
+            className="cursor-pointer overflow-hidden rounded-xl shadow hover:scale-105 transition p-4"
             onClick={() => setSelectedImage(image)}
           >
             {image.type === "video" ? (
@@ -207,6 +232,7 @@ export default function Gallery() {
                 className="h-64 w-full object-cover"
               />
             )}
+            <p className="mb-6 text-lg font-medium pt-5">{image.title}</p>
           </div>
         ))}
       </div>
